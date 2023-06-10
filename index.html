@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timed Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <!-- score/times unchanged throughout entire quiz -->
+        <a id="high-scores" href="#">View high scores</a>
+        <div id="countdown-timer" class="hidden">Time: <span id="timer"></span></div>
+    </nav>
+    <!-- Welcome page to start quiz -->
+    <section id="startpage">
+        <h1 id="h1-welcome">Coding Quiz Challenge</h1>
+        <p id="p-welcome">
+            Try to answer the following code-related questions within the time limit.
+            <br>Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+        <!-- Start quiz button -->
+        <button id="start-btn">Start Quiz</button>
+    </section>
+
+    <!-- Quiz boxes -->
+    <div id="quizBox" style="display:none">
+        <h2 id="actualQuestion"></h2>
+        <ul>
+            <div id="answerChoices">
+                <button id="answer1"></button>
+            </div>
+            <div>
+                <button id="answer2"></button>
+            </div>
+            <div>
+                <button id="answer3"></button>
+            </div>
+            <div>
+                <button id="answer4"></button>
+            </div>
+        </ul>
+
+    </div>
+    </body>
+    <!-- end body so end page and score results page can be separated -->
+
+    <!-- display for right/wrong answers -->
+    <section id="rightwrongDisplay">
+        <div id="correct-answer" class="hidden">
+            <h2>Correct!</h2>
+          </div>
+          <div id="wrong-answer" class="hidden">
+            <h2>Wrong!</h2>
+          </div>
+    </section>
+
+        <!-- End of the game results & high scores; where user inputs initials -->
+    <div id="allDone" style="display:none">
+        <h2>All done!</h2>
+        <!-- finalScoreappend? id -->
+        <p>Your final score is <div id="finalScore"></div></p>
+        <br>
+        <p for="initials">Enter intials: <textarea id="initials" name="initials"></textarea></p>
+        <input type="button" value="Submit" id="submitInitials" onclick="submitScore()">
+    </div>
+
+    <div id="high-score-page" style="display:none">
+        <h2>High scores</h2>
+        <div id="initialshs-box"></div>
+        <input type="button" value="Go back" id="goback-btn" onclick="goBack()">
+        <input type="button" value="Clear high scores" id="clearhs-btn" onclick="clearhs()">
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+</html>
