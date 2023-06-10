@@ -13,10 +13,10 @@ Remember DOM methods. Move questions & answers page into the JavaScript file. Th
 The user will begin at the start page where an explanation of the quiz is presented. The user then clicks "Start Quiz" to start quiz as well as the timer. User has 75 seconds to complete the quiz. There are nine questions total. Correct answers will earn the user ten points, and wrong answers will deduct ten seconds from the timer. Once the quiz comes to an end, or the user runs out of time, the screen will display total score and have a box for the user to input their initials and a submit button. There will also be a link at the top left corner where the user can go back and review high scores.
 
 Screenshot of quiz page:
-![alt text]()
+![alt text](./images/Screenshot%202023-06-09%20at%2010.11.26%20PM.png)
 
 Screenshot of quiz in action:
-![alt text]()
+![alt text](./images/Screenshot%202023-06-09%20at%2010.12.05%20PM.png)
 
 Link to take quiz: https://santanaco.github.io/web_quizz/
 
