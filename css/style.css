@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* scores/timer bar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+    align-items: center;
+}
+
+#high-scores {
+    color:blueviolet;
+}
+
+#high-scores:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+/* Welcome screen to start quiz */
+#startpage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+#startpage.hidden {
+    display: none;
+}
+
+#h1-welcome {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+
+#p-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Start quiz button */
+button {
+    background-color: indigo;
+    color:aliceblue;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: auto;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: darkorchid;
+    color: aliceblue;
+    border: none;
+}
+
+/* QUIZ containers */
+
+/* all questions styled */
+#actualQuestion {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+/* all answer buttons */
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+li {
+    background-color: indigo;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: darkorchid;
+    color: aliceblue;
+    border: none;
+}
+
+li::marker {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* end of quiz showing scores and input initials */
+#submitInitials {
+    background-color: indigo;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#submitInitials:hover {
+    background-color: darkorchid;
+    color: aliceblue;
+    border: none;
+}
+
+#goback-btn {
+    background-color: indigo;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#clearhs-btn {
+    background-color: indigo;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+    }
+}
